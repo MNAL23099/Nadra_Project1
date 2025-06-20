@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../../bootstrap-5.3.6-dist/bootstrap-5.3.6-dist/css/bootstrap.css">
+  <style>
+    body {
+      background-color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* Navbar Styling */
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .navbar-brand img {
+      height: 65px;
+      margin-right: 15px;
+    }
+
+    .navbar-text-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: white;
+      line-height: 1.2;
+    }
+
+    .navbar-text-title span:first-child {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .navbar-text-title span:last-child {
+      font-size: 0.9rem;
+    }
+
+    .dashboard-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #104d2f;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    /* Card Deck Layout */
+    .card-deck {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    /* Card Link Style */
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Card Outer Container */
+    .card {
+      width: 180px;
+      height: 180px;
+      border-radius: 1rem;
+      background-color: #ffffff;
+      box-shadow:
+        inset 0 0 15px rgba(16, 77, 47, 0.3),
+        0 4px 10px rgba(0, 0, 0, 0.05);
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: scale(1.07);
+      box-shadow:
+        inset 0 0 25px rgba(0, 255, 100, 0.4),
+        0 6px 18px rgba(0, 128, 0, 0.25);
+    }
+
+    /* Card Inner Content */
+    .card-inner {
+      background: linear-gradient(145deg, #121815, #33704c);
+      width: 90%;
+      height: 90%;
+      border-radius: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      padding: 10px;
+      box-shadow:
+        inset 0 0 20px rgba(255, 255, 255, 0.1),
+        inset 0 0 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 8px;
+    }
+
+    .card-text {
+      font-size: 0.85rem;
+      text-align: center;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #aaa;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #104d2f; padding-top: 0.7rem; padding-bottom: 0.7rem;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../../nadra.html">
+      <img src="../../../Data/Data_Signup/OIP.webp" alt="NADRA Logo">
+      <div class="navbar-text-title">
+        <span>NADRA</span>
+        <span>National Database & Registration Authority</span>
+      </div>
+    </a>
+  </div>
+</nav>
+
+<!-- Dashboard Title -->
+<h2 class="dashboard-title">Employee Dashboard</h2>
+
+<!-- Card Section -->
+<div class="card-deck">
+  <a href="../Registration/employee_duties.html" class="card-link">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-title">Registration</div>
+        <div class="card-text">Add new citizens</div>
+      </div>
+    </div>
+  </a>
+
+  <a href="../Search_person/search.php" class="card-link">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-title">Search Records</div>
+        <div class="card-text">Look up citizens</div>
+      </div>
+    </div>
+  </a>
+
+  <a href="../handleUserApplications/handleApplications.php" class="card-link">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-title">Applications</div>
+        <div class="card-text">Review & Approve</div>
+      </div>
+    </div>
+  </a>
+  <a href="../../../Family_system/family_dashboard.php" class="card-link">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-title">Family</div>
+        <div class="card-text">Marriage,Family-tree</div>
+      </div>
+    </div>
+  </a>
+</div>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 NADRA Employee Portal
+</footer>
+
+</body>
+</html>
